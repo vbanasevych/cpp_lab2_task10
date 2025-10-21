@@ -1,0 +1,161 @@
+Study for operation: 'Fast Operation' on 100000 elements
+
+
+1. Standard Library Algorithms
+Sequential (no policy): 7.214 ms
+Parallel (std::execution::par): 4.894 ms
+Parallel & Vectorized (std::execution::par_unseq): 3.907 ms
+
+2. Custom Parallel Algorithm
+Hardware threads available: 4
+
+Number of Threads (K)    Time (ms)
+---------------------------------------------
+1                        4.621
+2                        4.057
+3                        7.936
+4                        7.916
+5                        5.785
+6                        5.527
+7                        3.480
+8                        6.169
+
+Conclusions for Custom Algorithm
+Best performance achieved at K = 7 threads (3.480 ms).
+Optimal K does NOT match the number of hardware threads (4).
+
+
+Study for operation: 'Slow Operation' on 100000 elements
+
+
+1. Standard Library Algorithms
+Sequential (no policy): 3729.387 ms
+Parallel (std::execution::par): 2767.359 ms
+Parallel & Vectorized (std::execution::par_unseq): 4262.901 ms
+
+2. Custom Parallel Algorithm
+Hardware threads available: 4
+
+Number of Threads (K)    Time (ms)
+---------------------------------------------
+1                        5228.384
+2                        3099.188
+3                        2127.180
+4                        1759.796
+5                        1832.243
+6                        1960.679
+7                        1827.074
+8                        1781.588
+
+Conclusions for Custom Algorithm
+Best performance achieved at K = 4 threads (1759.796 ms).
+Optimal K matches the number of hardware threads.
+
+
+Study for operation: 'Fast Operation' on 1000000 elements
+
+
+1. Standard Library Algorithms
+Sequential (no policy): 87.757 ms
+Parallel (std::execution::par): 96.833 ms
+Parallel & Vectorized (std::execution::par_unseq): 69.409 ms
+
+2. Custom Parallel Algorithm
+Hardware threads available: 4
+
+Number of Threads (K)    Time (ms)
+---------------------------------------------
+1                        81.903
+2                        35.596
+3                        31.168
+4                        27.234
+5                        25.877
+6                        17.017
+7                        18.783
+8                        19.420
+
+Conclusions for Custom Algorithm
+Best performance achieved at K = 6 threads (17.017 ms).
+Optimal K does NOT match the number of hardware threads (4).
+
+
+Study for operation: 'Slow Operation' on 1000000 elements
+
+
+1. Standard Library Algorithms
+Sequential (no policy): 24819.876 ms
+Parallel (std::execution::par): 25946.641 ms
+Parallel & Vectorized (std::execution::par_unseq): 49440.065 ms
+
+2. Custom Parallel Algorithm
+Hardware threads available: 4
+
+Number of Threads (K)    Time (ms)
+---------------------------------------------
+1                        66038.473
+2                        25149.895
+3                        17866.465
+4                        17182.575
+5                        18201.913
+6                        19312.117
+7                        17665.219
+8                        18838.892
+
+Conclusions for Custom Algorithm
+Best performance achieved at K = 4 threads (17182.575 ms).
+Optimal K matches the number of hardware threads.
+
+
+Study for operation: 'Fast Operation' on 5000000 elements
+
+
+1. Standard Library Algorithms
+Sequential (no policy): 597.869 ms
+Parallel (std::execution::par): 533.655 ms
+Parallel & Vectorized (std::execution::par_unseq): 430.758 ms
+
+2. Custom Parallel Algorithm
+Hardware threads available: 4
+
+Number of Threads (K)    Time (ms)
+---------------------------------------------
+1                        526.173
+2                        300.284
+3                        260.027
+4                        213.849
+5                        233.918
+6                        203.737
+7                        229.016
+8                        186.255
+
+Conclusions for Custom Algorithm
+Best performance achieved at K = 8 threads (186.255 ms).
+Optimal K does NOT match the number of hardware threads (4).
+
+
+Study for operation: 'Slow Operation' on 5000000 elements
+
+
+1. Standard Library Algorithms
+Sequential (no policy): 275911.663 ms
+Parallel (std::execution::par): 118452.754 ms
+Parallel & Vectorized (std::execution::par_unseq): 120841.337 ms
+
+2. Custom Parallel Algorithm
+Hardware threads available: 4
+
+Number of Threads (K)    Time (ms)
+---------------------------------------------
+1                        117577.215
+2                        258906.807
+3                        36346.443
+4                        29814.619
+5                        29213.745
+6                        29219.550
+7                        29950.222
+8                        29552.906
+
+Conclusions for Custom Algorithm
+Best performance achieved at K = 5 threads (29213.745 ms).
+Optimal K does NOT match the number of hardware threads (4).
+
